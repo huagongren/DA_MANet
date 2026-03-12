@@ -53,7 +53,7 @@ def parse_arguments():
         - cuda: 是否使用CUDA（布尔值）。
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='daqing', help='Dataset to use: daqing or Hugoton_Panoma or part_daqing or blind1 or blind2. ')
+    parser.add_argument('--dataset', type=str, default='Hugoton_Panoma', help='Dataset to use: daqing or Hugoton_Panoma or part_daqing or blind1 or blind2. ')
     parser.add_argument('--no-cuda', action='store_true', default=False, help='Disables CUDA training.')
     parser.add_argument('--seed', type=int, default=244, help='Random seed.')
     parser.add_argument('--epochs', type=int, default=40, help='Number of epochs to train.')
