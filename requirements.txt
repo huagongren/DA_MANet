@@ -1,0 +1,14 @@
+imbalanced_learn==0.6.2
+imblearn==0.0
+matplotlib==3.2.2
+matplotlib==3.5.3
+numpy==1.21.6
+pandas==1.2.3
+Pillow==8.2.0
+Pillow==12.1.1
+scikit_learn==1.0.2
+seaborn==0.13.2
+timm==0.6.13
+torch==1.11.0
+torchvision==0.12.0
+xgboost==3.2.0
