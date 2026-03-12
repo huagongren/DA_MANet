@@ -79,7 +79,7 @@ def main():
         torch.manual_seed(seed)
         torch.cuda.manual_seed(seed)
         # 初始化模型
-        model = EMCNN_1D(*model_params)
+        model = MCNN_1D(*model_params)
 
 
 
