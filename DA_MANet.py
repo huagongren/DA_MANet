@@ -135,12 +135,12 @@ def main():
                 L_list_high = [min(5, i) for i in L_list_high]
                 L_list_low = [min(5, i) for i in L_list_low]
 
-                _, _, data_train_loader, _, _, _ = get_blind1_multiscale_cuda(data_path, args.blind_well1, args.blind_well2, high_acc_classes, low_acc_classes, features, L_list_low, L_list_high)
+                #_, _, data_train_loader, _, _, _ = get_blind1_multiscale_cuda(data_path, args.blind_well1, args.blind_well2, high_acc_classes, low_acc_classes, features, L_list_low, L_list_high)
                 #_, _, data_train_loader, _, _, _ = get_blind2_multiscale_cuda(data_path, args.blind_well3, high_acc_classes, low_acc_classes, features, L_list_low, L_list_high)
                 #_, _, data_train_loader, _, _, _ = get_daqing_multiscale_cuda(data_path, high_acc_classes, low_acc_classes, features, L_list_low, L_list_high)
                 #_, _, data_train_loader, _, _, _ = get_daqing_multiscale(data_path)
                 #_, _, data_train_loader, _, _, _ = get_Hugoton_Panoma_multiscale(data_path)
-                #_, _, data_train_loader, _, _, _ = get_Hugoton_Panoma_multiscale_cuda(data_path, high_acc_classes, low_acc_classes, features, L_list_low, L_list_high)
+                _, _, data_train_loader, _, _, _ = get_Hugoton_Panoma_multiscale_cuda(data_path, high_acc_classes, low_acc_classes, features, L_list_low, L_list_high)
             # 计算测试准确率
             test_accuracy, _, predicted_test = evaluate(model, x_test, y_test, device=device, return_probabilities=False)
             train_accs.append(train_accuracy)
